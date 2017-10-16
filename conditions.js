@@ -126,4 +126,3 @@ switch (name) {
         house = "Other";
         break;
 }
-
