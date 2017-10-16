@@ -69,3 +69,61 @@ else if (myLanguage === 'french') {
 else {
     console.log('Hello, world!');
 }
+
+
+
+
+// SWITCH ----------------------------
+// -----------------------------------
+
+// Long IF statement
+var name  = prompt("Favorite Game of Thrones main character:");
+var house = "";
+
+if (name === "Khal Drogo") {
+    house = "Dothraki";
+}
+else if (name === "Daenerys") {
+    house = "Targaryen";
+}
+else if (name === "Jon Snow" || name === "Sansa" || name === "Arya") {
+    house = "Stark";
+}
+else if (name === "Cersei" || name === "Tyrion" || name === "Ser Jaime") {
+    house = "Lannister";
+}
+else {
+    house = "Other";
+}
+
+
+// Re-written as a SWITCH
+var name  = prompt("Favorite Game of Thrones main character:");
+var house = "";
+
+switch (name) {
+    case "Khal Drogo":
+        house = "Dothraki";
+        break;
+
+    case "Daenerys":
+        house = "Targaryen";
+        break;
+
+    case "Jon Snow":
+    case "Sansa":
+    case "Arya":
+        house = "Stark";
+        break;
+
+    case "Cersei":
+    case "Tyrion":
+    case "Ser Jaime":
+        house = "Lannister"
+        break;
+
+    default:
+        house = "Other";
+        break;
+}
+
